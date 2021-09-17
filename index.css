@@ -1,0 +1,167 @@
+.container {
+  width: 95%;
+  max-width: 95vw;
+  min-height: 90vh;
+  margin: auto;
+  padding: 30px 0;
+  text-transform: capitalize;
+  background-color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.loan-ad {
+  width: 90%;
+  text-align: center;
+}
+
+.container .loan-information {
+  background-color: #084f0f;
+  padding: 5px 10px;
+  color: white;
+  text-align: left;
+  width: 85%;
+  text-transform: capitalize;
+}
+
+.container h2 {
+  text-transform: capitalize;
+}
+
+.container .loan-details {
+  margin-bottom: 10px;
+  width: 90%;
+  height: auto;
+  text-align: left;
+}
+
+.loan-details #loan_src {
+  width: 100%;
+}
+
+#loan_form {
+  width: 100%;
+  font-size: 1rem;
+}
+
+#loan_form input {
+  border: 1px solid #084f0f;
+  padding: 3px 6px;
+  width: 150px;
+  margin-top: 4px;
+  outline: none;
+}
+#loan_info {
+  width: 60%;
+  text-align: left;
+  margin-top: 60px;
+}
+
+#loan_info .table {
+  font-size: 16px;
+  margin: 0 0;
+}
+
+#loan_info h2 {
+  text-align: left;
+}
+
+#table {
+  overflow-x: auto;
+  width: 100%;
+  height: auto;
+  margin: 60px auto 0 auto;
+}
+
+.table-data {
+  border: 1px solid #fff;
+  width: auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: #084f0f;
+}
+
+#table .table-data {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  text-align: left;
+  color: #fff;
+}
+
+#table .table-data .head {
+  padding: 15px;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  background-color: #084f0f;
+}
+
+#table .table-data .data {
+  padding: 15px;
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+
+#table .table-data .data-extra {
+  padding: 15px;
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  background-color: #5a805e;
+  color: white;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#table .table-data .data-center {
+  text-align: center;
+  padding: 15px;
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  background-color: #5a805e;
+  color: white;
+  border-collapse: collapse;
+}
+
+.loan-div {
+  margin: 25px 0;
+}
+
+.loan-btns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.loan-btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 10px;
+  width: 100px;
+  border-radius: 0.3rem;
+  background-color: #084f0f;
+  color: white;
+}
+
+.btn-left {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container .loan-information,
+  .container .loan-details,
+  .loan-details #loan_src,
+  .loan-ad {
+    width: 70%;
+  }
+  #loan_info {
+    margin-top: 70px;
+  }
+}

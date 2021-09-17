@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mortgage anortization shedule</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--loan title---->
+      <h2 class="loan-ad"> mortgage Loan installment calculator</h2>
+      <h3 class="loan-information">loan inforamtion</h3>
+      <!--loan details flexbox-->
+      <div class="loan-details">
+        <!--loan form-->
+        <div id="loan_src">
+          <form name="loan_form" id='loan_form'>
+            <div class="loan-div">
+              <label>Loan amount:</label>
+              <br/>
+                  <input
+                    type="text"
+                    name="loan_amt"
+                    size="10"
+                    class="input-info"
+                  /><span>&#163;</span>
+            </div>
+             <div class="loan-div">
+           <label>Number of years:</label>
+        <br/>
+             <input
+                    type="text"
+                    name="years"
+                    size="10"
+                    class="input-info"
+                  /><span>yrs</span>
+             </div>
+        <div class="loan-div">
+               <label>Annual interest rate:</label>
+               <br/>
+                   <input
+                    type="text"
+                    name="rate"
+                    size="10"
+                    class="input-info"
+                  /><span>%</span>
+        </div>
+             <div class="loan-btns">
+                  <button
+                  type="button"
+                  onclick="validate()"
+               class="loan-btn"
+                >calculate
+                  </button>
+                <button
+                  type="button"
+                  onclick="startOver()"
+                  class="loan-btn btn-left"
+                >start over
+                </button>
+             </div>
+            </table>
+          </form>
+        </div>
+
+        <!--loan information-->
+        <div id="loan_info">
+        </div>
+
+      <!--loan table display-->
+      <div id="table">
+      </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
